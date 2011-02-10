@@ -45,7 +45,7 @@ GZIP_CONTENT_TYPES  = getattr(settings, 'GZIP_CONTENT_TYPES', (
 if IS_GZIPPED:
     from gzip import GzipFile
 
-def safe_join(base, *paths):its
+def safe_join(base, *paths):
     """
     A version of django.utils._os.safe_join for S3 paths.
 
